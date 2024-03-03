@@ -1,0 +1,279 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: #ffcc00;
+}
+
+header {
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #03357c;
+}
+
+.navBox {}
+
+h1 {
+    text-align: center;
+    margin: 5%;
+}
+
+nav {
+    gap: 20px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 30px;
+    background-color: #f8aecd;
+    text-decoration: none;
+    color: #03357c;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #03357c;
+    color: #f8aecd;
+    transition: 0.3s;
+}
+
+.textBox1 {
+    width: 400px;
+}
+
+.infoBox1 {
+    background-color: #03357c;
+}
+
+.infoBox1 h3 {
+    color: #f8aecd;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.infoBox1 p {
+    font-size: large;
+    font-weight: 450;
+}
+
+.grid_box1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    align-items: center;
+    padding: 10% 10% 10% 10%;
+    color: white;
+    font-size: large;
+}
+
+.icon_row {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.icon_row .icon1 img,
+.icon2 img,
+.icon3 img,
+.icon4 img {
+    width: 50%;
+    height: auto;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+    text-align: center;
+}
+
+.icon1 h2,
+.icon2 h2,
+.icon3 h2,
+.icon4 h2 {
+    padding: 5%;
+    color: #f8aecd;
+    font-weight: 1000;
+    font-size: xx-large;
+    background-color: #03357c;
+    margin: 5%;
+}
+
+.infoBox2 h2 {
+    padding-bottom: 2%;
+}
+
+.infoBox2Text {
+    width: 50%;
+    height: auto;
+    padding: 5%;
+    font-size: large;
+}
+
+.infoBox2Text h2 {
+    color: #f8aecd;
+}
+
+.infoBox2 img {
+    width: 40%;
+    height: auto;
+    padding: 5%;
+}
+
+.infoBox2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    color: white;
+    background-color: #03357c;
+}
+
+.DocentenBox {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.DocentenBox img {
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.pfpBox {
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    header, nav {
+        display: block;
+    }
+    nav a {
+        display: inline-block;
+        padding: 10px;
+    }
+    .DocentenBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pfpBox {
+        width: 40%;
+        margin: 2%;
+    }
+    .infoBox2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.MuiContainer-root.mui-style-1wvvugl {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    color-scheme: dark;
+    color: #fff;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    padding: 16px 0;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    margin-top: auto;
+    background-color: #03357c;
+    border-top: 1px solid #4f46e5;
+}
+
+.MuiBox-root {
+    padding-left: 256px;
+    padding-right: 256px;
+}
+
+.MuiTypography-root {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.MuiTypography-body2 {
+    font-size: 0.875rem;
+}
+
+.DocentenBox {
+    gap: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pfpBox {
+    background-color: #03357c;
+    padding: 2%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pfpBox img {
+    max-width: 50%;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.pfpBox p {
+    margin: 0;
+    color: #f8aecd;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.textBox1 h3 {
+    padding-bottom: 2%;
+}
+
+.versnelBox {
+    text-align: center;
+    background-color: #03357c;
+    color: white;
+    font-size: larger;
+    align-items: center;
+    border-top: 2px solid #f8aecd;
+    padding-bottom: 2%;
+}
+
+.versnelTextBox h3 {
+    padding-top: 5%;
+    color: #f8aecd;
+    font-weight: 1000;
+    font-size: xx-large;
+}
+
+.versnelTextBox p {
+    margin: 5%;
+    font-weight: 600;
+}
